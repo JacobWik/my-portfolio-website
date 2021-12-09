@@ -3,8 +3,8 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: white;
-  color: $mainColor;
+  background-color: $mainColor;
+  color: $darkblueColor;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -57,7 +57,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $mainColor;
+          background-color: $blueColor;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -66,20 +66,20 @@
   }
 
   &.active {
-    background-color: $mainColor;
-    color: white;
+    background-color: $darkblueColor;
+    color: $mainColor;
 
     .hamburger {
       span {
         &:first-child {
-          background-color: white;
+          background-color: $orangeColor;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: white;
+          background-color: $orangeColor;
           transform: rotate(-45deg);
         }
       }

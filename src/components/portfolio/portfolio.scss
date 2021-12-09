@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .portfolio {
-  background-color: white;
+  background-color: $mainColor;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,12 +27,12 @@
       width: 220px;
       height: 150px;
       border-radius: 20px;
-      border: 1px solid lightgray;
+      border: 5px solid lightgray;
       margin: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: $mainColor;
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
@@ -50,7 +50,7 @@
       }
 
       &:hover {
-        background-color: $mainColor;
+        background-color: $darkblueColor;
         img {
           opacity: 0.2;
           z-index: 0;
