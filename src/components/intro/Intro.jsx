@@ -13,22 +13,16 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-             strings: ["Developer", "Designer", "Programmer"],
+             strings: ["Developer", "Designer", "Programmer", "Tech-Enthusiast", "Culinary Hobbyist", "Ogre Mawtribe Warlord"],
             })
     }, [])
 
     return (
         <div className="intro" id="intro">
-            <div className="left">
-                <div className="imgContainer">
-                    <img src="assets/man.png" alt=""/>
-                </div>
-            </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hi there, I'm</h2>
-                    <h1>Jacob Wik</h1>
-                    <h3>Freelance <span ref={textRef}> </span></h3>
+                    <h1>Hi, I'm a <span ref={textRef}> </span></h1>
+                    <h2>Full-time student with lots of hobbies and <br></br>  always looking to improve in one way or another</h2>
                 </div>
                 <a href="#portfolio">
                     <ArrowCircleDownIcon/>

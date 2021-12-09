@@ -9,33 +9,27 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
+      icon: "./assets/controller.svg",
       title: "Ape-Catraz",
       desc:
         "A video game made by me and 7 more students during one of our courses ",
-      img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
-      embedId:"https://www.youtube.com/watch?v=liJVSwOiiwg&ab_channel=WebbyFan.com",
+      embedId:"https://www.youtube.com/watch?v=ScMzIvxBSi4",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
-      title: "Mobile Application",
+      icon: "./assets/Robot.svg",
+      title: "Minimax Algorithm",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-      embedId:"https://www.youtube.com/watch?v=liJVSwOiiwg&ab_channel=WebbyFan.com",
+        "A small game of 4 in a row/chess against an AI using the mini-max algorithm",
+      embedId:"https://www.youtube.com/watch?v=3HuEk4bkoBQ&ab_channel=JacobWik",
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
+      icon: "./assets/mobile.svg",
       title: "Mobile",
       desc:
-        "Space Hunter XZ is a group project i made with another student during my MobileApp course.  https://play.google.com/store/apps/details?id=com.NOLLFYRAStudios.SpaceHunterXZ",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-      embedId:"https://www.youtube.com/watch?v=liJVSwOiiwg&ab_channel=WebbyFan.com",
+        "Space Hunter XZ is a group project i made with another student during my MobileApp course.", //https://play.google.com/store/apps/details?id=com.NOLLFYRAStudios.SpaceHunterXZ",
+      embedId:"https://www.youtube.com/watch?v=ScMzIvxBSi4",
     },
   ];
 

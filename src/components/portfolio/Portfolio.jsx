@@ -78,7 +78,7 @@ export default function Portfolio() {
                 src={d.img}
                 alt=""
                 />
-                <h3>{d.title}</h3>
+                <h3> <a href={d.gitlink}>{d.title}</a></h3> 
             </div>
             ))}
             </div>

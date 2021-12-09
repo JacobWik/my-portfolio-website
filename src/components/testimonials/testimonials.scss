@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .testimonials {
-  background-color: $mainColor;
+  background-color: $darkBackground;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
     justify-content: center;
 
     .card {
-      background-color: whitesmoke;
+      background-color: $darkRed;
       width: 250px;
       height: 70%;
       border-radius: 10px;
@@ -28,7 +28,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding: 20px;
+      padding: 5px;
       transition: all 1s ease;
 
       &.featured {
@@ -45,15 +45,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 10px;
 
+        h1 {
+          font-size: 30px;
+        }
         img {
           &.left,
-          &right {
-            height: 25px;
+          &.right {
+            height: 5px;
+            width: 5px;
           }
           &.user {
-            height: 60px;
-            width: 60px;
+            height: 5px;
+            width: 5pxpx;
             border-radius: 50%;
             object-fit: cover;
             margin: 0 30px;
@@ -62,9 +67,27 @@
       }
 
       .center {
+        display: flex;
         padding: 10px;
         border-radius: 10px;
-        background-color: rgb(250, 244, 245);
+        background-color: $darkRed;
+
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: 600;
+          img {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+          }
+          p {
+            margin-left: 5px;
+          }
+        }
       }
 
       .bottom {

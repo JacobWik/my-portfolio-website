@@ -3,8 +3,8 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: $mainColor;
-  color: $darkblueColor;
+  background-color: $redColor;
+  color: white;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -41,6 +41,10 @@
         .span {
           font-size: 15px;
           font-weight: 500;
+
+          a {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -57,7 +61,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $blueColor;
+          background-color: $darkBackground;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -66,20 +70,20 @@
   }
 
   &.active {
-    background-color: $darkblueColor;
-    color: $mainColor;
+    background-color: $darkBackground;
+    color: $darkBackground;
 
     .hamburger {
       span {
         &:first-child {
-          background-color: $orangeColor;
+          background-color: $darkRed;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: $orangeColor;
+          background-color: $darkRed;
           transform: rotate(-45deg);
         }
       }
