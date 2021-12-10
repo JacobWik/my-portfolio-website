@@ -1,5 +1,6 @@
 import "./testimonials.scss";
-import {If, Then} from 'react-if-elseif-else-render';
+//import {If, Then} from 'react-if-else';
+const If = require("react-if-else")
 
 export default function Testimonials() {
 
@@ -70,6 +71,11 @@ export default function Testimonials() {
                 icon: "assets/nodejs.png", 
                 desc: "Node.js",
                 stack: "back-end"
+            },
+            {
+                icon: "assets/Unity.png", 
+                desc: "Unity",
+                stack: "miscellaneous"
             }
     ]
 
@@ -77,95 +83,34 @@ export default function Testimonials() {
         {
             id:1,
             stack: "front-end",
-            title: "front-end"
+            title: "Front-end",
+            stackImage: "./assets/frontendIcon.png"
         },
         {
             id:2,
             stack: "back-end",
-            title: "back-end",
+            title: "Back-end",
+            stackImage: "./assets/backendIcon.png",
             featured: true
         },
         {
             id:3,
             stack: "miscellaneous",
-            title: "miscellaneous"
+            title: "Miscellaneous",
+            stackImage: "./assets/miscelaneous.png"
         }
     ]
-
-    const data = [
-        {
-            id: 1,
-            title: "front-end",
-            
-            icon1: "assets/js.png",
-            desc1: "Javascript",
-
-            icon2: "assets/css-3.png",
-            desc2:  "CSS/SCSS",
-            
-            icon3: "assets/HTML.png",
-            desc3:  "HTML",
-
-            icon4: "assets/react.png",
-            desc4:  "React",
-        },
-        {
-          id: 2,
-          title: "back-end",
-
-            icon1: "assets/java.png",
-            desc1:  "Java",
-            
-            icon2: "assets/linkedin.png",
-            desc2:  "C#",
-
-            icon3: "assets/linkedin.png",
-            desc3: "C++",
-
-            icon4: "assets/linkedin.png",
-            desc4:  "SQL",
-
-          featured: true,
-        },
-        {
-          id: 3,
-          title: "miscellaneous",
-
-          icon1: "assets/react.png",
-          desc1:
-              "React",
-
-          icon2: "assets/linkedin.png",
-          desc2:
-              "Node.js",
-          
-          icon3: "assets/linkedin.png",
-          desc3:
-              "linux",
-
-          icon4: "assets/linkedin.png",
-          desc4:
-              "Git",
-
-          icon5: "assets/linkedin.png",
-          desc5:
-              "GitHub",
-
-          icon6: "assets/linkedin.png",
-          desc6:
-          "npm",
-        },
-      ];
 
     return (
         <div className="testimonials" id="testimonials">
             <div className="testimonials" id="testimonials">
-                <h1>Testimonials</h1>
+                <h1>Skills</h1>
                 <div className="container">
                     {tex.map((d) => (
                     <div id={d.id} className={d.featured ? "card featured" : "card"}>
                         <div className="top">
                             <h1>{d.title}</h1>
+                            <img src={d.stackImage}></img>
                         </div>
                         <div className="center">
                             {ost.map((o) => (

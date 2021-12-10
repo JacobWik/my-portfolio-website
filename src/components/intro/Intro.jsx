@@ -13,7 +13,7 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-             strings: ["Developer", "Designer", "Programmer", "Tech-Enthusiast", "Culinary Hobbyist", "Ogre Mawtribe Warlord"],
+             strings: ["Developer", "Designer", "Programmer", "Tech-Enthusiast", "Culinary Hobbyist"],
             })
     }, [])
 

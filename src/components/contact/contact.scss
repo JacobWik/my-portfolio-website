@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .contact {
-  background-color: $mainColor;
+  background-color: $darkBackground;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +86,10 @@
       button:focus {
         outline: none;
         border: 2px solid #4285f4;
+      }
+
+      span {
+        color: lightcoral;
       }
     }
   }

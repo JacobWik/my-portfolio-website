@@ -1,6 +1,8 @@
 @import "../../../global.scss";
 
 li {
+  margin-top: 20px;
+  color: white;
   font-size: 14px;
   margin-right: 50px;
   padding: 7px;
@@ -8,7 +10,7 @@ li {
   cursor: pointer;
 
   &.active {
-    background-color: $darkblueColor;
-    color: $mainColor;
+    background-color: $redColor;
+    color: white;
   }
 }

@@ -10,6 +10,8 @@
 
   h1 {
     font-size: 50px;
+    margin-top: 10px;
+    color: white;
   }
 
   .container {
@@ -20,11 +22,11 @@
     justify-content: center;
 
     .card {
-      background-color: $darkRed;
+      background-color: $redColor;
       width: 250px;
       height: 70%;
       border-radius: 10px;
-      box-shadow: 5px -5px 5px 0px #e8e3e4, -5px -5px 59px -4px #bacfd6;
+      box-shadow: 0 20px 2px -2px $darkRed;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -39,53 +41,55 @@
 
       &:hover {
         transform: scale(1.1);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       }
 
       .top {
+        flex: 0.5;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 10px;
+        color: white;
 
         h1 {
           font-size: 30px;
         }
         img {
-          &.left,
-          &.right {
-            height: 5px;
-            width: 5px;
-          }
-          &.user {
-            height: 5px;
-            width: 5pxpx;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 30px;
-          }
+          height: 5px;
+          width: 5px;
+          max-width: 20px;
+          max-height: 20px;
         }
       }
 
       .center {
+        flex: 0.5;
         display: flex;
         padding: 10px;
         border-radius: 10px;
-        background-color: $darkRed;
+        align-items: center;
+        justify-content: center;
+        background-color: $lighterBackground;
+        flex-wrap: wrap;
 
         .wrapper {
+          flex: 50%;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           font-size: 10px;
           font-weight: 600;
+          flex-grow: 1;
+          flex-wrap: wrap;
           img {
-            width: 20px;
-            height: 20px;
-            margin: 5px;
+            max-width: 40px;
+            max-height: 40px;
           }
           p {
-            margin-left: 5px;
+            margin-top: 5px;
+            flex: 50%;
           }
         }
       }
@@ -95,13 +99,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        h3 {
-          margin-bottom: 5px;
-        }
-        h4 {
-          color: grey;
-        }
       }
     }
   }

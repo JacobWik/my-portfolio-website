@@ -10268,6 +10268,11 @@ react-fast-compare@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
 
+react-if-else@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-if-else/-/react-if-else-1.1.1.tgz#e6b4c269f086273b8f83fe584d2e2846654c74a5"
+  integrity sha1-5rTCafCGJzuPg/5YTS4oRmVMdKU=
+
 react-if-elseif-else-render@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-if-elseif-else-render/-/react-if-elseif-else-render-1.0.2.tgz#d3a71784ce4ddaeae85f971ef808277de49a33a4"

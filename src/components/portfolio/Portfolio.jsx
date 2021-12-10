@@ -5,8 +5,8 @@ import {
     featuredPortfolio,
     webPortfolio,
     mobilePortfolio,
-    designPortfolio,
-    contentPortfolio,
+    biggerProjectsPortfolio,
+    placeholderPortfolio,
   } from "../../data";
 
 export default function Portfolio() {
@@ -26,12 +26,12 @@ export default function Portfolio() {
             title: "Mobile App"
         },
         {
-            id: "design",
-            title: "Design"
+            id: "bigProject",
+            title: "Bigger Projects"
         },
         {
-            id: "content",
-            title: "Content"
+            id: "placeholder",
+            title: "Placeholder"
         }
     ];
 
@@ -46,11 +46,11 @@ export default function Portfolio() {
           case "mobile":
             setData(mobilePortfolio);
             break;
-          case "design":
-            setData(designPortfolio);
+          case "bigProject":
+            setData(biggerProjectsPortfolio);
             break;
-          case "content":
-            setData(contentPortfolio);
+          case "placeholder":
+            setData(placeholderPortfolio);
             break;
           default:
             setData(featuredPortfolio);
